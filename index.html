@@ -9,6 +9,9 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- -------------------------ajax----------------------------------- -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -662,7 +665,7 @@
         e.preventDefault()
         if(validatename() && validateemail()&&validatesubject() &&validatemessage()){
           $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbwJSFCC9UkKUUwRs_FMxaAxWgfN4gz6LAIWKW7h1RBM4b4cgyaJjRNpaQ8l2HJ1WsI9Cw/exec",
+            url:"https://script.google.com/macros/s/AKfycbxtDNXmJLH07AlUIhDErd3zVgRzn3raDhzumOCPkF9_Hx_AHRzHNFnLV_1RkxQO0dDKiw/exec",
             data:$("#submit-form").serialize(),
             method:"post",
             success:function (response){
